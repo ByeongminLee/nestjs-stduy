@@ -15,6 +15,10 @@ import { User } from './User/entity/users.entity';
 import { UsersModule } from './User/users.module';
 import { DataSource } from 'typeorm';
 
+// Schedule
+import { ScheduleModule } from '@nestjs/schedule';
+import { TasksModule } from './Tasks/tasks.module';
+
 const mysqlConnectionConfig: any = {
   type: 'mysql',
   host: 'localhost',
@@ -41,8 +45,10 @@ dataSource
 @Module({
   imports: [
     TypeOrmModule.forRoot(mysqlConnectionConfig),
+    ScheduleModule.forRoot(),
     TestModule,
     UsersModule,
+    TasksModule,
   ],
   controllers: [AppController],
   providers: [AppService],

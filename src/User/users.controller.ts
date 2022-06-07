@@ -15,6 +15,11 @@ export class UsersController {
   constructor(private usersService: UsersService) {}
 
   @Get()
+  findAllInterval(): Promise<User[]> {
+    return this.usersService.findAll();
+  }
+
+  @Get()
   findAll(): Promise<User[]> {
     return this.usersService.findAll();
   }
