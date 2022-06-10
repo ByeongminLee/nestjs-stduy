@@ -1206,7 +1206,7 @@
 
 "@nestjs/config@^2.1.0":
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-2.1.0.tgz#334d6c3211f288eb40b1f8e2dbfbaf50b538f300"
+  resolved "https://registry.npmjs.org/@nestjs/config/-/config-2.1.0.tgz"
   integrity sha512-wUpt1/QJEN7xnJl4pM3c9rHrY1widq2yPOZfjaMD1//XAP9LLHTaW+RxSEG6BSGIm3w4wGtjco+gKNB2WL7yRg==
   dependencies:
     dotenv "16.0.1"
@@ -1226,6 +1226,11 @@
     path-to-regexp "3.2.0"
     tslib "2.4.0"
     uuid "8.3.2"
+
+"@nestjs/mapped-types@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz"
+  integrity sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg==
 
 "@nestjs/platform-express@^8.0.0":
   version "8.4.6"
@@ -1256,6 +1261,15 @@
     fs-extra "10.1.0"
     jsonc-parser "3.0.0"
     pluralize "8.0.0"
+
+"@nestjs/swagger@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/swagger/-/swagger-5.2.1.tgz#0fbd5dbc84aeebc2912009cce1309d4bebe9a52c"
+  integrity sha512-7dNa08WCnTsW/oAk3Ujde+z64JMfNm19DhpXasFR8oJp/9pggYAbYU927HpA+GJsSFJX6adjIRZsCKUqaGWznw==
+  dependencies:
+    "@nestjs/mapped-types" "1.0.1"
+    lodash "4.17.21"
+    path-to-regexp "3.2.0"
 
 "@nestjs/testing@^8.0.0":
   version "8.4.6"
@@ -2484,7 +2498,7 @@ catharsis@^0.9.0:
 
 caver-js@^1.8.1:
   version "1.8.1"
-  resolved "https://registry.yarnpkg.com/caver-js/-/caver-js-1.8.1.tgz#28147f6c88e04deebbd77a8252bc9b573236cf21"
+  resolved "https://registry.npmjs.org/caver-js/-/caver-js-1.8.1.tgz"
   integrity sha512-S3adM1GImyuZmFo7NoiZiiq6nKAT9AFQ6dfFyYoo46IxGc2PtJmSKzTDAU4K3JKu+1kyleK0N/nOpYrR/EyabA==
   dependencies:
     "@babel/runtime" "7.3.1"
@@ -3122,7 +3136,7 @@ dom-walk@^0.1.0:
 
 dotenv-expand@8.0.3:
   version "8.0.3"
-  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-8.0.3.tgz#29016757455bcc748469c83a19b36aaf2b83dd6e"
+  resolved "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-8.0.3.tgz"
   integrity sha512-SErOMvge0ZUyWd5B0NXMQlDkN+8r+HhVUsxgOO7IoPDOdDRD2JjExpN6y3KnFR66jsJMwSn1pqIivhU5rcJiNg==
 
 dotenv@16.0.1, dotenv@^16.0.0:
@@ -6708,7 +6722,7 @@ run-parallel@^1.1.9:
 
 run-script-webpack-plugin@0.0.14:
   version "0.0.14"
-  resolved "https://registry.yarnpkg.com/run-script-webpack-plugin/-/run-script-webpack-plugin-0.0.14.tgz#fe2362b32c1dab7a8af7a6f1246fc043690cedd7"
+  resolved "https://registry.npmjs.org/run-script-webpack-plugin/-/run-script-webpack-plugin-0.0.14.tgz"
   integrity sha512-DXe6lzzEVXjBr/74zd4m4yOfmz5P6GMjzhQxDDsViOmwG7cap8UCE6RgD5rT7zf4wM83a+ToHnpB3v4efUv5IA==
 
 run@^1.4.0:
@@ -7188,6 +7202,18 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swagger-ui-dist@>=4.11.0:
+  version "4.12.0"
+  resolved "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-4.12.0.tgz"
+  integrity sha512-B0Iy2ueXtbByE6OOyHTi3lFQkpPi/L7kFOKFeKTr44za7dJIELa9kzaca6GkndCgpK1QTjArnoXG+aUy0XQp1w==
+
+swagger-ui-express@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/swagger-ui-express/-/swagger-ui-express-4.4.0.tgz#4c50c51a092075588f173b2c3a5c830f07b6b44e"
+  integrity sha512-1CzRkHG386VQMVZK406jcpgnW2a9A5A/NiAjKhsFTQqUBWRF+uGbXTU/mA7WSV3mTzyOQDvjBdWP/c2qd5lqKw==
+  dependencies:
+    swagger-ui-dist ">=4.11.0"
 
 symbol-observable@4.0.0:
   version "4.0.0"
@@ -7714,7 +7740,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack@5.72.1, webpack@^5.65.0:
+webpack@5.72.1:
   version "5.72.1"
   resolved "https://registry.npmjs.org/webpack/-/webpack-5.72.1.tgz"
   integrity sha512-dXG5zXCLspQR4krZVR6QgajnZOjW2K/djHvdcRaDQvsjV9z9vaW6+ja5dZOYbqBBjF6kGXka/2ZyxNdc+8Jung==
@@ -7744,9 +7770,9 @@ webpack@5.72.1, webpack@^5.65.0:
     watchpack "^2.3.1"
     webpack-sources "^3.2.3"
 
-webpack@^5.73.0:
+webpack@^5.65.0, webpack@^5.73.0:
   version "5.73.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.73.0.tgz#bbd17738f8a53ee5760ea2f59dce7f3431d35d38"
+  resolved "https://registry.npmjs.org/webpack/-/webpack-5.73.0.tgz"
   integrity sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
