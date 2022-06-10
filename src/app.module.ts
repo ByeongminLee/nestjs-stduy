@@ -4,8 +4,6 @@ import {
   NestModule,
   RequestMethod,
 } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { LoggerMiddleware } from './middleware/logger.middleware';
 import { TestModule } from './test/test.module';
 
@@ -18,6 +16,7 @@ import { DataSource } from 'typeorm';
 // Schedule
 import { ScheduleModule } from '@nestjs/schedule';
 import { TasksModule } from './Tasks/tasks.module';
+import { ConfigModule } from '@nestjs/config';
 
 const mysqlConnectionConfig: any = {
   type: 'mysql',
@@ -46,12 +45,15 @@ dataSource
   imports: [
     TypeOrmModule.forRoot(mysqlConnectionConfig),
     ScheduleModule.forRoot(),
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+    }),
     TestModule,
     UsersModule,
     TasksModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
